@@ -17,7 +17,7 @@ _patches=(
   "https://tools.suckless.org/dmenu/patches/center/dmenu-center-4.8.diff"
   "https://tools.suckless.org/dmenu/patches/border/dmenu-border-4.9.diff"
   "https://tools.suckless.org/dmenu/patches/scroll/dmenu-scroll-20180607-a314412.diff"
-  "https://tools.suckless.org/dmenu/patches/line-height/dmenu-lineheight-4.9.diff"
+  "https://tools.suckless.org/dmenu/patches/initialtext/dmenu-initialtext-4.7.diff"
 )
 
 source=(
@@ -32,6 +32,7 @@ prepare() {
   patch -Np1 -F3 --ignore-whitespace < "$srcdir/dmenu-center-4.8.diff"
   patch -Np1 -F3 --ignore-whitespace < "$srcdir/dmenu-border-4.9.diff"
   patch -Np1 -F3 --ignore-whitespace < "$srcdir/dmenu-scroll-20180607-a314412.diff"
+  patch -Np1 -F3 --ignore-whitespace < "$srcdir/dmenu-initialtext-4.7.diff"
 }
 
 build() {
